@@ -3,35 +3,12 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+I'm Herbert Ullrich — researcher, developer, occasional teacher of both humans and machines.
 
-![Astro Paper](public/astropaper-og.jpg)
+Currently a **Graduate Research Intern** at the [Artificial Intelligence Center](https://aic.fel.cvut.cz/) in Prague (since 2020), where I poke at AI problems and try to make them poke back usefully. I also lecture for [AI dětem](https://aidetem.cz/) — teaching kids about AI since 2022, which turns out to be the best way to check whether you actually understand something.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+Before that, I was an **Algorithms Tutor** at [Universität des Saarlandes](https://www.uni-saarland.de/) under prof. [Raimund Seidel](https://www.cs.uni-saarland.de/people/seidel.php), wrangling computational geometry and FFT into shapes that Master's students could digest. Made some lasting friends along the way.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+On the industry side: **Full Stack Developer** at [STEM/MARK](https://www.stemmark.cz/) (2017–2018), building real-world web projects including a GDPR-friendly yoga licensing platform and a nutritional therapy portal. Before that, three years at Yeti Studio and three summers interning at ON Semiconductor, where I shipped Android/iOS apps and optimised [onsemi.com](https://www.onsemi.com/).
 
-## Features
-
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
-
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
-
-and so much more.
-
-## Show your support
-
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
-
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
-
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+In short: I write code, teach things, and research stuff. Sometimes all at once.
