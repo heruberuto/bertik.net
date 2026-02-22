@@ -10,10 +10,14 @@ import {
 } from "@shikijs/transformers";
 import { transformerFileName } from "./src/utils/transformers/fileName";
 import { SITE } from "./src/config";
+import { LINKS } from "./src/data/links";
 
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
+  redirects: Object.fromEntries(
+    Object.entries(LINKS).map(([slug, url]) => [`/${slug}`, url])
+  ),
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
