@@ -7,6 +7,8 @@ import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
+import IconOrcid from "@/assets/icons/IconOrcid.svg";
+import IconGoogleScholar from "@/assets/icons/IconGoogleScholar.svg";
 import { SITE } from "@/config";
 
 interface Social {
@@ -40,6 +42,18 @@ export const SOCIALS: Social[] = [
     href: "mailto:ja@bertik.net",
     linkTitle: `Send an email to ${SITE.title}`,
     icon: IconMail,
+  },
+  {
+    name: "ORCID",
+    href: "https://orcid.org/0000-0000-0000-0000", // TODO: replace with your ORCID iD
+    linkTitle: `${SITE.title} on ORCID`,
+    icon: IconOrcid,
+  },
+  {
+    name: "Google Scholar",
+    href: "https://scholar.google.com/citations?user=TODO", // TODO: replace with your Scholar profile URL
+    linkTitle: `${SITE.title} on Google Scholar`,
+    icon: IconGoogleScholar,
   },
 ] as const;
 
