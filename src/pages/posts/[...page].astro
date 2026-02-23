@@ -21,6 +21,12 @@ const { page } = Astro.props;
 <Layout title={`Posts | ${SITE.title}`}>
   <Header />
   <Main pageTitle="Posts" pageDesc="All the articles I've posted.">
+    <p class="mb-6">
+      Publications are included here as a category:
+      <a href="/tags/publications/" class="underline decoration-dashed underline-offset-4 hover:text-accent">
+        publications
+      </a>.
+    </p>
     <ul>
       {page.data.map(data => <Card {...data} />)}
     </ul>

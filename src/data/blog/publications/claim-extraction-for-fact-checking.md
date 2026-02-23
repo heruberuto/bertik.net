@@ -1,6 +1,16 @@
 ---
-layout: ../../layouts/AboutLayout.astro
 title: "Claim Extraction for Fact-Checking: Data, Models, and Automated Metrics"
+pubDatetime: 2025-02-10T00:00:00Z
+description: "arXiv preprint arXiv:2502.04955"
+tags: ["publications", "fact-checking", "claim-extraction"]
+featured: false
+kind: "publication"
+authors:
+  - "H Ullrich"
+  - "T Mlynář"
+  - "J Drchal"
+venue: "arXiv preprint arXiv:2502.04955"
+citations: 2
 ---
 
 **Authors:** H Ullrich, T Mlynář, J Drchal  
@@ -11,7 +21,7 @@ title: "Claim Extraction for Fact-Checking: Data, Models, and Automated Metrics"
 ## Links
 
 - arXiv: [2502.04955](https://arxiv.org/abs/2502.04955)
-- Google Scholar: [View entry](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
+- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
 
 ## Abstract
 

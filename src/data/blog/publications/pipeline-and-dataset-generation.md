@@ -1,6 +1,17 @@
 ---
-layout: ../../layouts/AboutLayout.astro
 title: "Pipeline and dataset generation for automated fact-checking in almost any language"
+pubDatetime: 2024-10-01T00:00:00Z
+description: "Neural Computing and Applications 36 (30), 19023-19054"
+tags: ["publications", "fact-checking", "datasets"]
+featured: false
+kind: "publication"
+authors:
+  - "J Drchal"
+  - "H Ullrich"
+  - "T Mlynář"
+  - "V Moravec"
+venue: "Neural Computing and Applications 36 (30), 19023-19054"
+citations: 9
 ---
 
 **Authors:** J Drchal, H Ullrich, T Mlynář, V Moravec  
@@ -10,7 +21,7 @@ title: "Pipeline and dataset generation for automated fact-checking in almost an
 
 ## Links
 
-- Google Scholar: [View entry](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
+- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
 
 ## Abstract
 

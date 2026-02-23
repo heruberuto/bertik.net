@@ -1,6 +1,15 @@
 ---
-layout: ../../layouts/AboutLayout.astro
 title: "AIC CTU@ FEVER 8: On-premise fact checking through long context RAG"
+pubDatetime: 2025-09-01T00:00:00Z
+description: "Proceedings of the Eighth Fact Extraction and VERification Workshop (FEVER)"
+tags: ["publications", "fact-checking", "rag"]
+featured: false
+kind: "publication"
+authors:
+  - "H Ullrich"
+  - "J Drchal"
+venue: "Proceedings of the Eighth Fact Extraction and VERification Workshop (FEVER)"
+citations: 2
 ---
 
 **Authors:** H Ullrich, J Drchal  
@@ -10,7 +19,7 @@ title: "AIC CTU@ FEVER 8: On-premise fact checking through long context RAG"
 
 ## Links
 
-- Google Scholar: [View entry](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
+- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
 
 ## Abstract
 

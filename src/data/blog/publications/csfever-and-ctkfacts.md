@@ -1,6 +1,18 @@
 ---
-layout: ../../layouts/AboutLayout.astro
 title: "CsFEVER and CTKFacts: Acquiring Czech data for fact verification"
+pubDatetime: 2023-12-01T00:00:00Z
+description: "Language Resources and Evaluation 57 (4), 1571-1605"
+tags: ["publications", "fact-checking", "datasets"]
+featured: false
+kind: "publication"
+authors:
+  - "H Ullrich"
+  - "J Drchal"
+  - "M Rýpar"
+  - "H Vincourová"
+  - "V Moravec"
+venue: "Language Resources and Evaluation 57 (4), 1571-1605"
+citations: 19
 ---
 
 **Authors:** H Ullrich, J Drchal, M Rýpar, H Vincourová, V Moravec  
@@ -10,7 +22,7 @@ title: "CsFEVER and CTKFacts: Acquiring Czech data for fact verification"
 
 ## Links
 
-- Google Scholar: [View entry](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
+- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
 
 ## Abstract
 

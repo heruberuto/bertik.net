@@ -1,6 +1,20 @@
 ---
-layout: ../../layouts/AboutLayout.astro
 title: "Assessing the quality of information extraction"
+pubDatetime: 2024-04-08T00:00:00Z
+description: "arXiv preprint arXiv:2404.04068"
+tags: ["publications", "information-extraction"]
+featured: false
+kind: "publication"
+authors:
+  - "F Seitl"
+  - "T Kovářík"
+  - "S Mirshahi"
+  - "J Kryštůfek"
+  - "R Dujava"
+  - "M Ondreička"
+  - "et al."
+venue: "arXiv preprint arXiv:2404.04068"
+citations: 11
 ---
 
 **Authors:** F Seitl, T Kovářík, S Mirshahi, J Kryštůfek, R Dujava, M Ondreička, et al.  
@@ -11,7 +25,7 @@ title: "Assessing the quality of information extraction"
 ## Links
 
 - arXiv: [2404.04068](https://arxiv.org/abs/2404.04068)
-- Google Scholar: [View entry](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
+- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
 
 ## Abstract
 

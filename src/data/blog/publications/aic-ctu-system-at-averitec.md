@@ -1,6 +1,16 @@
 ---
-layout: ../../layouts/AboutLayout.astro
 title: "AIC CTU system at AVeriTeC: Re-framing automated fact-checking as a simple RAG task"
+pubDatetime: 2024-06-15T00:00:00Z
+description: "Proceedings of the Seventh Fact Extraction and VERification Workshop (FEVER)"
+tags: ["publications", "fact-checking", "rag"]
+featured: false
+kind: "publication"
+authors:
+  - "H Ullrich"
+  - "T Mlynář"
+  - "J Drchal"
+venue: "Proceedings of the Seventh Fact Extraction and VERification Workshop (FEVER)"
+citations: 10
 ---
 
 **Authors:** H Ullrich, T Mlynář, J Drchal  
@@ -10,7 +20,7 @@ title: "AIC CTU system at AVeriTeC: Re-framing automated fact-checking as a simp
 
 ## Links
 
-- Google Scholar: [View entry](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
+- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
 
 ## Abstract
 
