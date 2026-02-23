@@ -45,13 +45,13 @@ export const SOCIALS: Social[] = [
   },
   {
     name: "ORCID",
-    href: "https://orcid.org/0000-0000-0000-0000", // TODO: replace with your ORCID iD
+    href: "https://orcid.org/0000-0001-9447-2794",
     linkTitle: `${SITE.title} on ORCID`,
     icon: IconOrcid,
   },
   {
     name: "Google Scholar",
-    href: "https://scholar.google.com/citations?user=TODO", // TODO: replace with your Scholar profile URL
+    href: "https://scholar.google.com/citations?user=1AZsqXEAAAAJ",
     linkTitle: `${SITE.title} on Google Scholar`,
     icon: IconGoogleScholar,
   },

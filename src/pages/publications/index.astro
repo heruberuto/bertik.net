@@ -1,0 +1,109 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import { SITE } from "@/config";
+
+const scholarUrl = "https://scholar.google.com/citations?user=1AZsqXEAAAAJ";
+const orcidUrl = "https://orcid.org/0000-0001-9447-2794";
+
+const publications = [
+  {
+    slug: "csfever-and-ctkfacts",
+    title: "CsFEVER and CTKFacts: Acquiring Czech data for fact verification",
+    authors: "H. Ullrich, J. Drchal, M. Rýpar, H. Vincourová, V. Moravec",
+    venue: "Language Resources and Evaluation 57(4), 1571-1605",
+    citations: "19",
+    year: "2023",
+  },
+  {
+    slug: "assessing-quality-of-information-extraction",
+    title: "Assessing the quality of information extraction",
+    authors:
+      "F. Seitl, T. Kovářík, S. Mirshahi, J. Kryštůfek, R. Dujava, M. Ondreička, et al.",
+    venue: "arXiv preprint arXiv:2404.04068",
+    citations: "11",
+    year: "2024",
+  },
+  {
+    slug: "aic-ctu-system-at-averitec",
+    title:
+      "AIC CTU system at AVeriTeC: Re-framing automated fact-checking as a simple RAG task",
+    authors: "H. Ullrich, T. Mlynář, J. Drchal",
+    venue: "Proceedings of the Seventh Fact Extraction and VERification Workshop (FEVER)",
+    citations: "10",
+    year: "2024",
+  },
+  {
+    slug: "pipeline-and-dataset-generation",
+    title:
+      "Pipeline and dataset generation for automated fact-checking in almost any language",
+    authors: "J. Drchal, H. Ullrich, T. Mlynář, V. Moravec",
+    venue: "Neural Computing and Applications 36(30), 19023-19054",
+    citations: "9",
+    year: "2024",
+  },
+  {
+    slug: "aic-ctu-fever-8-long-context-rag",
+    title: "AIC CTU@ FEVER 8: On-premise fact checking through long context RAG",
+    authors: "H. Ullrich, J. Drchal",
+    venue: "Proceedings of the Eighth Fact Extraction and VERification Workshop (FEVER)",
+    citations: "2",
+    year: "2025",
+  },
+  {
+    slug: "claim-extraction-for-fact-checking",
+    title: "Claim Extraction for Fact-Checking: Data, Models, and Automated Metrics",
+    authors: "H. Ullrich, T. Mlynář, J. Drchal",
+    venue: "arXiv preprint arXiv:2502.04955",
+    citations: "2",
+    year: "2025",
+  },
+  {
+    slug: "aic-ctu-at-averimatec",
+    title: "AIC CTU@ AVerImaTeC: dual-retriever RAG for image-text fact checking",
+    authors: "H. Ullrich, J. Drchal",
+    venue: "arXiv preprint arXiv:2602.15190",
+    citations: "N/A",
+    year: "2026",
+  },
+];
+---
+
+<Layout title={`Publications | ${SITE.title}`}>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content" class="app-layout">
+    <section id="publications" class="app-prose mb-28 max-w-app prose-img:border-0">
+      <h1 class="text-2xl tracking-wider sm:text-3xl">Publications</h1>
+      <p>
+        Full list also on <a href={scholarUrl}>Google Scholar</a> and <a href={orcidUrl}>ORCID</a>.
+      </p>
+
+      <div class="not-prose mt-8 grid gap-4">
+        {
+          publications.map(pub => (
+            <article class="rounded-lg border border-border p-5 transition hover:border-accent/60">
+              <h2 class="text-lg font-semibold text-accent">
+                <a href={`/publications/${pub.slug}/`} class="hover:underline">
+                  {pub.title}
+                </a>
+              </h2>
+              <p class="mt-2 text-sm opacity-90">{pub.authors}</p>
+              <p class="mt-1 text-sm opacity-80">{pub.venue}</p>
+              <p class="mt-3 text-sm opacity-75">{pub.year} | Citations: {pub.citations}</p>
+              <a
+                href={`/publications/${pub.slug}/`}
+                class="mt-3 inline-block text-sm font-medium text-accent hover:underline"
+              >
+                Open publication page
+              </a>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
