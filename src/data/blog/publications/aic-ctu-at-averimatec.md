@@ -1,5 +1,5 @@
 ---
-title: "AIC CTU@ AVerImaTeC: dual-retriever RAG for image-text fact checking"
+title: "AIC CTU@AVerImaTeC: dual-retriever RAG for image-text fact checking"
 pubDatetime: 2026-02-15T00:00:00Z
 description: "arXiv preprint arXiv:2602.15190"
 tags: ["publications", "fact-checking", "rag"]
