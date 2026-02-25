@@ -23,10 +23,15 @@ const publications = getSortedPosts(posts).filter(
   <Header />
   <Breadcrumb />
   <main id="main-content" class="app-layout">
-    <section id="publications" class="app-prose mb-28 max-w-app prose-img:border-0">
+    <section
+      id="publications"
+      class="app-prose mb-28 max-w-app prose-img:border-0"
+    >
       <h1 class="text-2xl tracking-wider sm:text-3xl">Publications</h1>
       <p>
-        Full list also on <a href={scholarUrl}>Google Scholar</a> and <a href={orcidUrl}>ORCID</a>.
+        Full list also on <a href={scholarUrl}>Google Scholar</a> and <a
+          href={orcidUrl}>ORCID</a
+        >.
       </p>
 
       <div class="not-prose mt-8 grid gap-4">
@@ -34,20 +39,21 @@ const publications = getSortedPosts(posts).filter(
           publications.map(publication => (
             <article class="rounded-lg border border-border p-5 transition hover:border-accent/60">
               <h2 class="text-lg font-semibold text-accent">
-                <a href={getPath(publication.id, publication.filePath)} class="hover:underline">
+                <a
+                  href={getPath(publication.id, publication.filePath)}
+                  class="hover:underline"
+                >
                   {publication.data.title}
                 </a>
               </h2>
-              {
-                publication.data.authors && (
-                  <p class="mt-2 text-sm opacity-90">{publication.data.authors.join(", ")}</p>
-                )
-              }
-              {
-                publication.data.venue && (
-                  <p class="mt-1 text-sm opacity-80">{publication.data.venue}</p>
-                )
-              }
+              {publication.data.authors && (
+                <p class="mt-2 text-sm opacity-90">
+                  {publication.data.authors.join(", ")}
+                </p>
+              )}
+              {publication.data.venue && (
+                <p class="mt-1 text-sm opacity-80">{publication.data.venue}</p>
+              )}
               <p class="mt-3 text-sm opacity-75">
                 {publication.data.pubDatetime.getUTCFullYear()} | Citations:{" "}
                 {publication.data.citations ?? "N/A"}

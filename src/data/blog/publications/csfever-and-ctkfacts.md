@@ -22,11 +22,9 @@ citations: 19
 
 ## Links
 
-- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
-
 ## Abstract
 
-_TODO: Add abstract or summary._
+CsFEVER and CTKFacts introduce Czech-language resources for automated fact verification. The paper describes how claims and evidence were collected, annotated, and validated, and it highlights the challenges of balancing label quality, evidence grounding, and linguistic diversity in a lower-resource setting.
 
 ## Resources
 
@@ -37,4 +35,4 @@ _TODO: Add abstract or summary._
 
 ## Notes
 
-_TODO: Add notes, experiments, or follow-up material._
+This dataset work was foundational for our later shared-task systems: it gave us Czech-centric data practices, annotation lessons, and realistic expectations about retrieval and evidence quality when moving from English benchmarks to multilingual fact-checking.
