@@ -21,8 +21,6 @@ citations: 9
 
 ## Links
 
-- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
-
 ## Abstract
 
 The paper presents an end-to-end pipeline for building automated fact-checking datasets in almost any language, covering claim harvesting, normalization, evidence linking, and verification labeling. It emphasizes scalable data creation while preserving enough quality control to support robust model training and evaluation.

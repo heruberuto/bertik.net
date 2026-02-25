@@ -19,8 +19,6 @@ citations: 2
 
 ## Links
 
-- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
-
 ## Abstract
 
 Our FEVER 8 system explores on-premise fact-checking with long-context retrieval-augmented generation. We focus on practical deployment constraints, retrieval quality over long documents, and evidence-aware generation that keeps outputs grounded in retrieved passages.

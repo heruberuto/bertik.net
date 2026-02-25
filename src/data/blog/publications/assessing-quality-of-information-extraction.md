@@ -25,7 +25,6 @@ citations: 11
 ## Links
 
 - arXiv: [2404.04068](https://arxiv.org/abs/2404.04068)
-- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
 
 ## Abstract
 

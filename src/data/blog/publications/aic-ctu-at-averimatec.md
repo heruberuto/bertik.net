@@ -20,7 +20,6 @@ citations: "N/A"
 ## Links
 
 - arXiv: [2602.15190](https://arxiv.org/abs/2602.15190)
-- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
 
 ## Abstract
 

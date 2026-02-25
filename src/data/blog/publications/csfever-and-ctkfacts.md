@@ -22,8 +22,6 @@ citations: 19
 
 ## Links
 
-- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
-
 ## Abstract
 
 CsFEVER and CTKFacts introduce Czech-language resources for automated fact verification. The paper describes how claims and evidence were collected, annotated, and validated, and it highlights the challenges of balancing label quality, evidence grounding, and linguistic diversity in a lower-resource setting.

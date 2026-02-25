@@ -20,8 +20,6 @@ citations: 10
 
 ## Links
 
-- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
-
 ## Abstract
 
 We recast automated fact-checking as a retrieval-augmented generation task: retrieve relevant evidence, then generate a verdict and justification directly from that evidence. The paper details a lightweight but effective pipeline and discusses where simplification helps versus where specialized modules are still needed.
