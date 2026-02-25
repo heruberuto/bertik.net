@@ -25,8 +25,8 @@ Our FEVER 8 system explores on-premise fact-checking with long-context retrieval
 
 ## Resources
 
-- Video: _TODO_
-- Slides: _TODO_
+- Video: [Underline lecture recording](https://underline.io/lecture/124235-aic-ctuatfever-8-on-premise-fact-checking-through-long-context-rag)
+- Slides: [Underline presentation slides](https://underline.io/lecture/124235-aic-ctuatfever-8-on-premise-fact-checking-through-long-context-rag)
 - Code: _TODO_
 - Dataset: _TODO_
 

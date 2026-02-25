@@ -26,8 +26,8 @@ We recast automated fact-checking as a retrieval-augmented generation task: retr
 
 ## Resources
 
-- Video: _TODO_
-- Slides: _TODO_
+- Video: [Underline lecture recording](https://underline.io/lecture/107018-aic-ctu-system-at-averitec-re-framing-automated-fact-checking-as-a-simple-rag-task)
+- Slides: [Underline presentation slides](https://underline.io/lecture/107018-aic-ctu-system-at-averitec-re-framing-automated-fact-checking-as-a-simple-rag-task)
 - Code: _TODO_
 - Dataset: _TODO_
 
