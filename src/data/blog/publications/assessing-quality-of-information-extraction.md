@@ -29,7 +29,7 @@ citations: 11
 
 ## Abstract
 
-_TODO: Add abstract or summary._
+This work studies how to evaluate information extraction outputs beyond simple exact matching. We discuss practical quality dimensions (correctness, completeness, consistency, and usefulness), compare metric choices, and show where automatic scores diverge from human judgment for real extraction tasks.
 
 ## Resources
 
@@ -40,4 +40,4 @@ _TODO: Add abstract or summary._
 
 ## Notes
 
-_TODO: Add notes, experiments, or follow-up material._
+I like this paper as a "methodology anchor" for later projects: before optimizing extraction models, we first make evaluation explicit and reliable. That framing helped us design cleaner experiments in downstream fact-checking and claim verification pipelines.

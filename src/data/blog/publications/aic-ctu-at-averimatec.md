@@ -1,5 +1,5 @@
 ---
-title: "AIC CTU@AVerImaTeC: dual-retriever RAG for image-text fact checking"
+title: "🥇🏆 AIC CTU@AVerImaTeC: dual-retriever RAG for image-text fact checking"
 pubDatetime: 2026-02-15T00:00:00Z
 description: "arXiv preprint arXiv:2602.15190"
 tags: ["publications", "fact-checking", "rag"]
@@ -24,7 +24,7 @@ citations: "N/A"
 
 ## Abstract
 
-_TODO: Add abstract or summary._
+This paper introduces a dual-retriever RAG system for multimodal fact-checking, combining textual and image-aware evidence retrieval before verdict generation. The architecture is built to reduce hallucinations by forcing stronger evidence alignment across modalities.
 
 ## Resources
 
@@ -35,4 +35,4 @@ _TODO: Add abstract or summary._
 
 ## Notes
 
-_TODO: Add notes, experiments, or follow-up material._
+A highlight of this project was our 1st-place finish in AVeriTeC 2. Beyond leaderboard performance, we are proud that the system remained interpretable: retrieval traces made it easier to analyze failures and iterate quickly.
