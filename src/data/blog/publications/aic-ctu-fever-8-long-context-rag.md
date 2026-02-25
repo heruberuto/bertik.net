@@ -1,5 +1,5 @@
 ---
-title: "AIC CTU@FEVER 8: On-premise fact checking through long context RAG"
+title: "🥇 AIC CTU@FEVER 8: On-premise fact checking through long context RAG"
 pubDatetime: 2025-09-01T00:00:00Z
 description: "Proceedings of the Eighth Fact Extraction and VERification Workshop (FEVER)"
 tags: ["publications", "fact-checking", "rag"]
@@ -23,7 +23,7 @@ citations: 2
 
 ## Abstract
 
-_TODO: Add abstract or summary._
+Our FEVER 8 system explores on-premise fact-checking with long-context retrieval-augmented generation. We focus on practical deployment constraints, retrieval quality over long documents, and evidence-aware generation that keeps outputs grounded in retrieved passages.
 
 ## Resources
 
@@ -34,4 +34,4 @@ _TODO: Add abstract or summary._
 
 ## Notes
 
-_TODO: Add notes, experiments, or follow-up material._
+This submission reflects our preference for reproducible, controllable pipelines: instead of relying on closed hosted systems, we showed that competitive fact-checking can be done in an on-prem setup with careful long-context retrieval design.
