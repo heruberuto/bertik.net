@@ -1,5 +1,5 @@
 ---
-title: "🏅 AIC CTU@FEVER 8: On-premise fact checking through long context RAG"
+title: "🥇 AIC CTU@FEVER 8: On-premise fact checking through long context RAG"
 pubDatetime: 2025-09-01T00:00:00Z
 description: "Proceedings of the Eighth Fact Extraction and VERification Workshop (FEVER)"
 tags: ["publications", "fact-checking", "rag"]

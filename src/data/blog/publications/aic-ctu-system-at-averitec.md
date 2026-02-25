@@ -1,5 +1,5 @@
 ---
-title: "🏅 AIC CTU system at AVeriTeC: Re-framing automated fact-checking as a simple RAG task"
+title: "🥉 AIC CTU system at AVeriTeC: Re-framing automated fact-checking as a simple RAG task"
 pubDatetime: 2024-06-15T00:00:00Z
 description: "Proceedings of the Seventh Fact Extraction and VERification Workshop (FEVER)"
 tags: ["publications", "fact-checking", "rag"]
