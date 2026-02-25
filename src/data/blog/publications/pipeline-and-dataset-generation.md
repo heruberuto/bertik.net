@@ -21,11 +21,9 @@ citations: 9
 
 ## Links
 
-- Google Scholar: [View profile](https://scholar.google.com/citations?user=1AZsqXEAAAAJ)
-
 ## Abstract
 
-_TODO: Add abstract or summary._
+The paper presents an end-to-end pipeline for building automated fact-checking datasets in almost any language, covering claim harvesting, normalization, evidence linking, and verification labeling. It emphasizes scalable data creation while preserving enough quality control to support robust model training and evaluation.
 
 ## Resources
 
@@ -36,4 +34,4 @@ _TODO: Add abstract or summary._
 
 ## Notes
 
-_TODO: Add notes, experiments, or follow-up material._
+For us, this was a key "from prototype to production" step: we moved from one-off dataset creation to a repeatable multilingual workflow that can be adapted to new domains and languages with manageable effort.
