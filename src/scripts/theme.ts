@@ -2,27 +2,48 @@
 const THEME = "theme";
 const LIGHT = "light";
 const DARK = "dark";
+const SYSTEM = "system";
+const THEME_SEQUENCE = [LIGHT, DARK, SYSTEM] as const;
+type ThemeMode = (typeof THEME_SEQUENCE)[number];
 
 // Initial color scheme
-// Can be "light", "dark", or empty string for system's prefers-color-scheme
+// Can be "light", "dark", "system", or empty string for system's prefers-color-scheme
 const initialColorScheme = "";
 
-function getPreferTheme(): string {
-  // get theme data from local storage (user's explicit choice)
-  const currentTheme = localStorage.getItem(THEME);
-  if (currentTheme) return currentTheme;
-
-  // return initial color scheme if it is set (site default)
-  if (initialColorScheme) return initialColorScheme;
-
-  // return user device's prefer color scheme (system fallback)
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? DARK
-    : LIGHT;
+function isThemeMode(value: string | null | undefined): value is ThemeMode {
+  return value === LIGHT || value === DARK || value === SYSTEM;
 }
 
-// Use existing theme value from inline script if available, otherwise detect
-let themeValue = window.theme?.themeValue ?? getPreferTheme();
+function getSystemTheme(): typeof LIGHT | typeof DARK {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? DARK : LIGHT;
+}
+
+function resolveTheme(mode: ThemeMode): typeof LIGHT | typeof DARK {
+  return mode === SYSTEM ? getSystemTheme() : mode;
+}
+
+function getPreferThemeMode(): ThemeMode {
+  // get theme mode from local storage (user's explicit choice)
+  const currentTheme = localStorage.getItem(THEME);
+  if (isThemeMode(currentTheme)) return currentTheme;
+
+  // return initial color scheme if it is set (site default)
+  if (isThemeMode(initialColorScheme)) return initialColorScheme;
+
+  // default to system color scheme
+  return SYSTEM;
+}
+
+function getNextTheme(mode: ThemeMode): ThemeMode {
+  const currentIndex = THEME_SEQUENCE.indexOf(mode);
+  return THEME_SEQUENCE[(currentIndex + 1) % THEME_SEQUENCE.length];
+}
+
+// Use existing theme mode from inline script if available, otherwise detect
+const inlineThemeValue = window.theme?.themeValue;
+let themeValue: ThemeMode = isThemeMode(inlineThemeValue)
+  ? inlineThemeValue
+  : getPreferThemeMode();
 
 function setPreference(): void {
   localStorage.setItem(THEME, themeValue);
@@ -30,9 +51,19 @@ function setPreference(): void {
 }
 
 function reflectPreference(): void {
-  document.firstElementChild?.setAttribute("data-theme", themeValue);
+  const resolvedTheme = resolveTheme(themeValue);
+  document.firstElementChild?.setAttribute("data-theme", resolvedTheme);
 
-  document.querySelector("#theme-btn")?.setAttribute("aria-label", themeValue);
+  const themeBtn = document.querySelector<HTMLButtonElement>("#theme-btn");
+  themeBtn?.setAttribute("aria-label", `Theme: ${themeValue}`);
+  themeBtn?.setAttribute("title", `Theme: ${themeValue}`);
+  themeBtn?.setAttribute("data-theme-mode", themeValue);
+  themeBtn
+    ?.querySelectorAll<HTMLElement>(".theme-icon")
+    .forEach(icon => icon.classList.add("hidden"));
+  themeBtn
+    ?.querySelector<HTMLElement>(`.theme-icon-${themeValue}`)
+    ?.classList.remove("hidden");
 
   // Get a reference to the body element
   const body = document.body;
@@ -63,7 +94,9 @@ if (window.theme) {
     reflectPreference,
     getTheme: () => themeValue,
     setTheme: (val: string) => {
-      themeValue = val;
+      if (isThemeMode(val)) {
+        themeValue = val;
+      }
     },
   };
 }
@@ -76,8 +109,12 @@ function setThemeFeature(): void {
   reflectPreference();
 
   // now this script can find and listen for clicks on the control
-  document.querySelector("#theme-btn")?.addEventListener("click", () => {
-    themeValue = themeValue === LIGHT ? DARK : LIGHT;
+  const themeBtn = document.querySelector<HTMLButtonElement>("#theme-btn");
+  if (!themeBtn || themeBtn.dataset.themeBound === "true") return;
+
+  themeBtn.dataset.themeBound = "true";
+  themeBtn.addEventListener("click", () => {
+    themeValue = getNextTheme(themeValue);
     window.theme?.setTheme(themeValue);
     setPreference();
   });
@@ -107,8 +144,8 @@ document.addEventListener("astro:before-swap", event => {
 // sync with system changes
 window
   .matchMedia("(prefers-color-scheme: dark)")
-  .addEventListener("change", ({ matches: isDark }) => {
-    themeValue = isDark ? DARK : LIGHT;
-    window.theme?.setTheme(themeValue);
-    setPreference();
+  .addEventListener("change", () => {
+    if (themeValue === SYSTEM) {
+      reflectPreference();
+    }
   });
