@@ -13,7 +13,7 @@
   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
   <circle cx="12" cy="12" r="8" />
   <path d="M8.5 9h.01" />
-  <path d="M8.5 11.5v4.5" />
+  <path d="M8.5 11.5v3" />
   <path d="M12 9.5v5" />
   <path d="M12 9.5h2a2.5 2.5 0 0 1 0 5h-2" />
 </svg>
