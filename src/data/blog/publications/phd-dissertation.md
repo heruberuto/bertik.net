@@ -1,6 +1,6 @@
 ---
 title: "PhD Dissertation: NLP Methods for Automated Fact-Checking"
-pubDatetime: 2026-03-06T12:00:00Z
+pubDatetime: 2026-03-05T12:00:00Z
 description: "Work-in-progress dissertation tracing the evolution of automated fact-checking from 2021 to 2026, with a focus on agentic LLM pipelines."
 tags: ["research", "fact-checking", "nlp", "phd"]
 featured: false
